@@ -15,6 +15,7 @@ def run(user, password, *commands):
         rline = sfile.readline()
         while rline:
             print(rline.strip())
+            return rline.strip()
             rline = sfile.readline()
     finally:
         sock.close()
